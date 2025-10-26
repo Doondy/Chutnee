@@ -1,11 +1,14 @@
 import React, { useContext } from "react";
 import { CartContext } from "../context/CartContext";
 import "../styles/Menu.css";
+import Paneerbuttermasala from "../assets/Paneerbuttermasala.jpg";
+import Vegbiryani from "../assets/Vegbiryani.jpg";
+import Chutnewiththali from "../assets/Chutnewiththali.jpg";
 
 const sampleMenu = [
-  { id: 1, name: "Paneer Butter Masala", price: 250, image: "../assets/PaneerButterMasala.jpg" },
-  { id: 2, name: "Veg Biryani", price: 180, image: "../assets/VegBiryani.jpg" },
-  { id: 3, name: "ChutNee Special Thali", price: 320, image: "../assets/ChutneeThali.jpg" },
+  { id: 1, name: "Paneer Butter Masala", price: 250, image: Paneerbuttermasala },
+  { id: 2, name: "Veg Biryani", price: 180, image: Vegbiryani },
+  { id: 3, name: "ChutNee Special Thali", price: 320, image: Chutnewiththali },
 ];
 
 export default function Menu() {

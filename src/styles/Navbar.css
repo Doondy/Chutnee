@@ -1,129 +1,43 @@
 .navbar {
-  position: fixed;
-  top: 0;
   width: 100%;
-  background: linear-gradient(90deg, #ff6b35, #ff9b00);
-  color: #fff;
-  z-index: 999;
-  padding: 0.8rem 1.2rem;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
-}
-
-.navbar-container {
-  max-width: 1200px;
-  margin: auto;
+  padding: 1rem 2rem;
+  background-color: #222; /* Dark gray navbar */
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
 }
 
-/* Logo Section */
-.navbar-logo {
+.navbar-left {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 0.8rem;
 }
 
 .logo {
-  width: 45px;
-  height: 45px;
-  object-fit: contain;
-  border-radius: 50%;
-  transition: transform 0.3s ease;
-}
-.logo:hover {
-  transform: rotate(8deg) scale(1.1);
+  width: 40px;
+  height: 40px;
 }
 
-.brand {
-  font-size: 1.6rem;
+.brand-title {
+  font-size: 1.5rem;
   font-weight: 700;
-  letter-spacing: 1px;
-  color: white;
+  color: #fff;
 }
 
-/* Nav Links */
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 2rem;
-  transition: all 0.4s ease;
+.brand-name {
+  color: #00bfa6; /* Change this to any color you want (teal, blue, etc.) */
 }
 
-.nav-links li a {
+/* Navbar links */
+.navbar-right a {
+  margin-left: 1.5rem;
+  color: #ccc;
   text-decoration: none;
-  color: white;
   font-weight: 500;
-  font-size: 1rem;
-  position: relative;
   transition: color 0.3s ease;
 }
 
-/* Animated underline */
-.nav-links li a::after {
-  content: "";
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 0%;
-  height: 2px;
-  background-color: white;
-  transition: width 0.3s ease-in-out;
-}
-
-.nav-links li a:hover::after {
-  width: 100%;
-}
-
-/* Hamburger */
-.hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  gap: 5px;
-}
-
-.hamburger span {
-  width: 26px;
-  height: 3px;
-  background: rgb(25, 24, 24);
-  transition: all 0.4s ease;
-  border-radius: 2px;
-}
-
-.hamburger.active span:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
-}
-.hamburger.active span:nth-child(2) {
-  opacity: 0;
-}
-.hamburger.active span:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
-}
-
-/* Responsive for Mobile */
-@media (max-width: 768px) {
-  .nav-links {
-    position: absolute;
-    top: 65px;
-    right: 0;
-    background: linear-gradient(90deg, #ff6b35, #ff9b00);
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-    gap: 1.5rem;
-    padding: 1.5rem 0;
-    max-height: 0;
-    overflow: hidden;
-    opacity: 0;
-  }
-
-  .nav-links.open {
-    max-height: 400px;
-    opacity: 1;
-  }
-
-  .hamburger {
-    display: flex;
-  }
+.navbar-right a:hover {
+  color: #00bfa6; /* Same as brand color or slightly lighter */
 }
