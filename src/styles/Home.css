@@ -1,0 +1,76 @@
+/* Full screen hero section */
+.home-page {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+      rgba(233, 119, 5, 0.7),
+      rgba(246, 127, 16, 0.7)
+    ),
+    url("/assets/hero-bg.jpg") center/cover no-repeat; /* Optional hero image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  transition: background 0.3s ease;
+}
+
+/* Overlay for better readability */
+.home-overlay {
+  text-align: center;
+  padding: 2rem;
+  max-width: 900px;
+}
+
+/* Hero title */
+.home-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.home-content .brand-name {
+  color: #ff3300; 
+}
+
+.home-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #ff0606;
+  line-height: 1.5;
+}
+
+
+.order-now-btn {
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background-color: #ff7a00;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.order-now-btn:hover {
+  background-color: #00a86b;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .home-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .home-content p {
+    font-size: 1rem;
+  }
+
+  .order-now-btn {
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+  }
+}

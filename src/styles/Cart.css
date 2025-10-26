@@ -1,0 +1,15 @@
+.cart {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.cart h2 {
+  color: #e65100;
+  margin-bottom: 1rem;
+}
+.cart-items {
+  max-width: 600px;
+  margin: auto;
+  list-style: none;
+  padding: 0;
+}
